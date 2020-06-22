@@ -1,5 +1,5 @@
-# React-typescript-mobx-boilerplate
-## React, Typescript, Mobx, eslint, prettier, husky, axios
+# React-typescript-reatom
+## React, Typescript, Reatom, eslint, prettier, husky, axios
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

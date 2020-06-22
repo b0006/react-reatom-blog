@@ -1,0 +1,52 @@
+@import '../../assets/scss/_utils.scss';
+
+@mixin menu-line {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  padding: 0;
+  margin: 0;
+
+  .active {
+    color: $active;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+    padding: 15px 0;
+  }
+}
+
+.wrapper {
+  height: 100%;
+  border-bottom: 1px solid $active;
+
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    @include container;
+
+    .left {
+      @include menu-line;
+
+      a:not(:first-child) {
+        margin: 0 10px;
+      }
+    }
+
+    .right {
+      @include menu-line;
+      a:not(:last-child) {
+        margin: 0 10px;
+      }
+    }
+  }
+}
+
+.content {
+  @include container;
+  padding-top: 20px;
+}

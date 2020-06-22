@@ -1,15 +1,18 @@
 import React from 'react';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, Switch } from 'react-router-dom';
 
 import StartPage from '../pages/StartPage';
+import AboutPage from '../pages/AboutPage';
 import NotFoundPage from '../pages/NotFoundPage';
+
+import { PublicRoute } from './types';
 
 const Router: React.FC = () => (
   <BrowserRouter>
     <Switch>
-      <Route exact path="/" component={StartPage} />
-
-      <Route path="*" component={NotFoundPage} />
+      <PublicRoute exact path="/" component={StartPage} />
+      <PublicRoute exact path="/about" component={AboutPage} />
+      <PublicRoute path="*" component={NotFoundPage} />
     </Switch>
   </BrowserRouter>
 );
