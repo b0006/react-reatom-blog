@@ -7,6 +7,7 @@ import './assets/scss/index.scss';
 import configureStore from './redux/store';
 import AppRouter from './route';
 import * as serviceWorker from './serviceWorker';
+import showOutlineOnlyTab from './tabOutline';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -16,6 +17,8 @@ ReactDOM.render(
   </React.StrictMode>,
   document.getElementById('root')
 );
+
+showOutlineOnlyTab();
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.

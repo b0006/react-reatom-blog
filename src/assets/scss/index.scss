@@ -1,7 +1,7 @@
 @import './fonts';
 @import './vars';
 
-* {
+:root {
   font-family: 'Merriweather', serif;
 }
 
@@ -11,9 +11,19 @@ body {
   overflow: overlay;
   -moz-overflow: overlay;
   color: $bg-font-color;
+
+  .using-mouse :focus {
+    outline: none;
+    background-color: transparent;
+  }
 }
 
-*:focus {
-  outline: 0;
+:focus {
+  outline: none;
   background-color: $bg-font-hover;
+}
+
+body.using-mouse :focus {
+  outline: none;
+  background-color: transparent;
 }
