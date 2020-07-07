@@ -11,11 +11,6 @@ body {
   overflow: overlay;
   -moz-overflow: overlay;
   color: $bg-font-color;
-
-  .using-mouse :focus {
-    outline: none;
-    background-color: transparent;
-  }
 }
 
 :focus {
